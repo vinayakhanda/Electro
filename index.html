@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro</title>
+    <script src="script.js"></script>
+    <style>
+        #disc {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(5, 0, 0, 0.966);
+  z-index: 2;
+  
+    
+}
+li{
+    color:aliceblue;
+}
+.txt{
+    margin-top: 5cm;
+}
+    </style>
+</head>
+<body>
+    <h1>Electro</h1>
+    <p>Electro helps you to estimate your monthly electricity bill and helps you alnalyze about what usage you should decrease and helps you to become more Eco-friendly towards mother nature </p>
+    <label for="elcCost">Rate of electricity in your area </label>
+    <input type="number" name="" id="elRate">
+    <br>
+    <br>
+    <div id="disc">
+        
+        <div class="txt" >
+            <h1 style="color: aliceblue;">Disclaimer</h1>
+            <li> I (the develpor of this programme) DO NOT provide any accuracy of the results shown by this software.</li>
+            <li>This software is meant for an ESTIMATE of the total usage of electricity by the user and the ESTIMATED Bill cost.</li>
+            <li>The total usage of an appliance is based on the AVERAGE of all the models of all the appliances and the electricity consumption may varry for model to model and company to company</li>
+            <li>If the result bill amount is different from the actuall bill whcih you get......I am not responsible</li>
+            <li> But if its near to the actuall amount....your welcome</li>
+            <button onclick= document.location.reload()>Close</button>
+        </div>
+    </div>
+    <table border="" cellpadding="5px">
+        <tr>
+            <th>Name of appliance</th>
+            <th>No. of appliance BEING USED</th>   
+            <th>No. of hours it is used per day (if it is in minutes please <br>write it in decimals eg 30 mins = 0.5 hrs)</th>       
+            <th>Total Power used in a one day (output only) (in kilowatt)</th>
+            <th>Total power consumed in Month (output only) (in kilowatt)</th>
+        </tr>
+        <tr>
+            <td>A/c</td>
+            <td> <input type="number" name="" id="ac"></td>
+            <td> <input type="number" name="" id="acHour"></td>
+            <td id="acday"></td>
+            <td id="acMonth"></td>
+
+        </td>
+        </tr>
+        <tr>
+            <td> Tv </td>
+            <td> <input type="number" name="" id="tv"></td>
+            <td> <input type="number" name="" id="tvHour"></td>
+            <td id="tvday"></td>
+            <td id="tvMonth"></td>
+
+        </tr>
+        <tr>
+            <td> Fridge </td>
+            <td> <input type="number" name="" id="fridge"></td>
+            <td> <input type="number" name="" id="fridgeHour"></td>
+            <td id="fridgeday"></td>
+            <td id="fridgeMonth"></td>
+        </tr>
+        <tr>
+            <td> Washing Machine </td>
+            <td> <input type="number" name="" id="wm"></td>
+            <td> <input type="number" name="" id="wmHour"></td>
+            <td id="wmday"></td>
+            <td id="wmMonth"></td>
+        </tr>
+        <tr>
+            <td> Geyser </td>
+            <td> <input type="number" name="" id="geyser"></td>
+            <td> <input type="number" name="" id="geyserHour"></td>
+            <td id="geyserday"></td>
+            <td id="geyserMonth"></td>
+        </tr>
+        <tr>
+            <td> Microwave </td>
+            <td> <input type="number" name="" id="micro"></td>
+            <td> <input type="number" name="" id="microHour"></td>
+            <td id="microday"></td>
+            <td id="microMonth"></td>
+        </tr>
+        <tr>
+            <td> Computer </td>
+            <td> <input type="number" name="" id="comp"></td>
+            <td> <input type="number" name="" id="compHour"></td>
+            <td id="compday"></td>
+            <td id="compMonth"></td>
+        </tr>
+        <tr>
+            <td> LED Bulb</td>
+            <td> <input type="number" name="" id="blb"></td>
+            <td> <input type="number" name="" id="blbHour"></td>
+            <td id="blbday"></td>
+            <td id="blbMonth"></td>
+            
+        </tr>
+        <tr>
+            <td> Fans </td>
+            <td> <input type="number" name="" id="fans"></td>
+            <td> <input type="number" name="" id="fansHour"></td>
+            <td id="fanday"></td>
+            <td id="fanMonth"></td>
+        </tr>
+        <tr>
+            <td>Induction cooker</td>
+            <td> <input type="number" name="" id="ic"></td>
+            <td> <input type="number" name="" id="icHour"></td>
+            <td id="icday"></td>
+            <td id="icMonth"></td>
+        </tr>
+        <tr>
+            <td>LED TubeLight</td>
+            <td> <input type="number" name="" id="tube"></td>
+            <td> <input type="number" name="" id="tubeHour"></td>
+            <td id="tubeday"></td>
+            <td id="tubeMonth"></td>
+
+        </tr>
+    </table>
+    <datalist id="yesorno"> 
+        <option value="Yes"></option>
+        <option value="No"></option>
+    </datalist>
+<button onclick="Calculate()">Calculate</button>
+<br>
+<br>
+<p id="ttlpwr"></p>
+<p id="emCost"></p>
+<p id="sgst"></p>
+<p style="font-size: 8px;" onclick="show()">Show Disclaimer
+</p>
+<script>
+    function show(){
+        document.getElementById("disc").style.display = "block";
+    }
+    // function close(){
+        
+    // }
+   
+</script>
+<!-- Made by Vinayak Handa (github.com/vinayakhanda) -->
+</body>
+</html>
