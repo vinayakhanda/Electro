@@ -19,4 +19,4 @@ Electro is a tool for estimating the elctricity consumption of your home which c
 - [LICENSE](LICENSE) - The license of the project.
 - [README.md](README.md) - The readme of the project.
 ## Special thanks
-- I would like to thanks my little Brother for helping me to make this project who doesnt even knows ABC of programming 😂.
+- I would like to thanks my little Brother for helping me to make this project (who doesnt even knows ABC of programming 😂).
