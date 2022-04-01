@@ -7,7 +7,7 @@ Electro is a tool for estimating the elctricity consumption of your home which c
 - Then I thought 'What if I make a web application that can calculate the electricity consumption of my home?'...
 ## Running the tool
 - To run, you just need to open the index.html file in your browser.
-- You can directly preview it from - https://vinayakhanda.github.io/Electro/](https://vinayakhanda.github.io/Electro/)
+- You can directly preview it from - https://vinayakhanda.github.io/Electro/] (https://vinayakhanda.github.io/Electro/)
 ## Languages and programming 
 - The tool is written in HTML, and JavaScript.
 - A little bit of CSS is used to make the design of the disclamier.
